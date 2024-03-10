@@ -1,0 +1,33 @@
+{
+    "name": "firebreather11",
+    "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/connections/firebreather11",
+    "etag": "W/\"13a2b182-0c09-4663-85bb-4a59de163fd0\"",
+    "type": "Microsoft.Network/connections",
+    "location": "westcentralus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "4e364022-e155-49d9-b340-2effa2da8bd1",
+        "virtualNetworkGateway1": {
+            "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/virtualNetworkGateways/vnet100000"
+        },
+        "localNetworkGateway2": {
+            "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/vibesandvibeez/providers/Microsoft.Network/localNetworkGateways/fusionlocale1"
+        },
+        "connectionType": "IPsec",
+        "connectionProtocol": "IKEv2",
+        "routingWeight": 0,
+        "sharedKey": "testing123@11",
+        "authenticationType": "PSK",
+        "enableBgp": false,
+        "useLocalAzureIpAddress": false,
+        "usePolicyBasedTrafficSelectors": false,
+        "ipsecPolicies": [],
+        "trafficSelectorPolicies": [],
+        "connectionStatus": "NotConnected",
+        "ingressBytesTransferred": 0,
+        "egressBytesTransferred": 0,
+        "dpdTimeoutSeconds": 45,
+        "connectionMode": "Default"
+    }
+}
