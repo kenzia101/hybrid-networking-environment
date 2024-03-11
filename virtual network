@@ -1,0 +1,85 @@
+{
+    "name": "inkubator",
+    "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/virtualNetworks/inkubator",
+    "etag": "W/\"7ef0292e-b665-43a3-be7a-a8a0ef57a7ec\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "westcentralus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "152779b3-ae4f-4c2a-ae9b-ee32adab864e",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "encryption": {
+            "enabled": false,
+            "enforcement": "AllowUnencrypted"
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/virtualNetworks/inkubator/subnets/default",
+                "etag": "W/\"7ef0292e-b665-43a3-be7a-a8a0ef57a7ec\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "GatewaySubnet",
+                "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/virtualNetworks/inkubator/subnets/GatewaySubnet",
+                "etag": "W/\"7ef0292e-b665-43a3-be7a-a8a0ef57a7ec\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.1.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/IKKUBATOR/providers/Microsoft.Network/virtualNetworkGateways/VNET100000/ipConfigurations/DEFAULT"
+                        }
+                    ],
+                    "serviceEndpoints": [],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "webappsubnet",
+                "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/virtualNetworks/inkubator/subnets/webappsubnet",
+                "etag": "W/\"7ef0292e-b665-43a3-be7a-a8a0ef57a7ec\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.2.0/24",
+                    "serviceEndpoints": [],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "databasesubnet",
+                "id": "/subscriptions/97329611-009b-404b-82d9-3d38d0fabc7a/resourceGroups/ikkubator/providers/Microsoft.Network/virtualNetworks/inkubator/subnets/databasesubnet",
+                "etag": "W/\"7ef0292e-b665-43a3-be7a-a8a0ef57a7ec\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.3.0/24",
+                    "serviceEndpoints": [],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ],
+        "virtualNetworkPeerings": [],
+        "enableDdosProtection": false
+    }
+}
